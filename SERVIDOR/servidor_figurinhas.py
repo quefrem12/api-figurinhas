@@ -2,11 +2,9 @@ from flask import Flask, render_template_string, send_from_directory, send_file
 import os
 import zipfile
 import io
-import socket
 
 app = Flask(__name__)
 
-# Coloque aqui o mesmo nome da pasta de destino que você usou no outro script
 PASTA_FIGURINHAS = "./figurinhas_prontas"
 
 HTML_TEMPLATE = """
@@ -31,7 +29,7 @@ HTML_TEMPLATE = """
     <p>Acesse pelo celular e baixe o pacote pronto.</p>
     
     <a href="/baixar_zip" class="btn">📥 Baixar Todas (ZIP)</a>
-    <p class="aviso">Após baixar, descompacte no celular para importar no Zap!</p>
+    <p class="aviso">O app puxa este ZIP automaticamente!</p>
 
     <div class="grid">
         {% for fig in figurinhas %}
@@ -46,7 +44,6 @@ HTML_TEMPLATE = """
 def index():
     if not os.path.exists(PASTA_FIGURINHAS):
         os.makedirs(PASTA_FIGURINHAS)
-    # Pega só os arquivos .webp
     figurinhas = [f for f in os.listdir(PASTA_FIGURINHAS) if f.endswith('.webp')]
     return render_template_string(HTML_TEMPLATE, figurinhas=figurinhas)
 
@@ -61,26 +58,11 @@ def baixar_zip():
         for f in os.listdir(PASTA_FIGURINHAS):
             if f.endswith('.webp'):
                 caminho_completo = os.path.join(PASTA_FIGURINHAS, f)
-                zf.write(caminho_completo, f) # Adiciona ao ZIP
+                zf.write(caminho_completo, f)
     memory_file.seek(0)
     return send_file(memory_file, download_name="minhas_figurinhas.zip", as_attachment=True)
 
-def pegar_ip_local():
-    s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-    try:
-        s.connect(('10.255.255.255', 1))
-        ip = s.getsockname()[0]
-    except Exception:
-        ip = '127.0.0.1'
-    finally:
-        s.close()
-    return ip
-
 if __name__ == '__main__':
-    ip = pegar_ip_local()
-    print("="*50)
-    print(f"🚀 SERVIDOR DE FIGURINHAS ONLINE!")
-    print(f"📱 Pegue seu celular e acesse o endereço abaixo no navegador:")
-    print(f"👉 http://{ip}:5000")
-    print("="*50)
-    app.run(host='0.0.0.0', port=5000)
+    # A NUVEM INJETA A PORTA AQUI:
+    porta = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=porta)
