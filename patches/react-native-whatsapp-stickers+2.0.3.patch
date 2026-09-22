@@ -1,0 +1,409 @@
+diff --git a/node_modules/react-native-whatsapp-stickers/android/.classpath b/node_modules/react-native-whatsapp-stickers/android/.classpath
+new file mode 100644
+index 0000000..bbe97e5
+--- /dev/null
++++ b/node_modules/react-native-whatsapp-stickers/android/.classpath
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<classpath>
++	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17/"/>
++	<classpathentry kind="con" path="org.eclipse.buildship.core.gradleclasspathcontainer"/>
++	<classpathentry kind="output" path="bin/default"/>
++</classpath>
+diff --git a/node_modules/react-native-whatsapp-stickers/android/.project b/node_modules/react-native-whatsapp-stickers/android/.project
+new file mode 100644
+index 0000000..11beddd
+--- /dev/null
++++ b/node_modules/react-native-whatsapp-stickers/android/.project
+@@ -0,0 +1,23 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<projectDescription>
++	<name>react-native-whatsapp-stickers</name>
++	<comment>Project react-native-whatsapp-stickers created by Buildship.</comment>
++	<projects>
++	</projects>
++	<buildSpec>
++		<buildCommand>
++			<name>org.eclipse.jdt.core.javabuilder</name>
++			<arguments>
++			</arguments>
++		</buildCommand>
++		<buildCommand>
++			<name>org.eclipse.buildship.core.gradleprojectbuilder</name>
++			<arguments>
++			</arguments>
++		</buildCommand>
++	</buildSpec>
++	<natures>
++		<nature>org.eclipse.jdt.core.javanature</nature>
++		<nature>org.eclipse.buildship.core.gradleprojectnature</nature>
++	</natures>
++</projectDescription>
+diff --git a/node_modules/react-native-whatsapp-stickers/android/.settings/org.eclipse.buildship.core.prefs b/node_modules/react-native-whatsapp-stickers/android/.settings/org.eclipse.buildship.core.prefs
+new file mode 100644
+index 0000000..1675490
+--- /dev/null
++++ b/node_modules/react-native-whatsapp-stickers/android/.settings/org.eclipse.buildship.core.prefs
+@@ -0,0 +1,2 @@
++connection.project.dir=../../../android
++eclipse.preferences.version=1
+diff --git a/node_modules/react-native-whatsapp-stickers/android/build.gradle b/node_modules/react-native-whatsapp-stickers/android/build.gradle
+index 2b6debf..c37cfe4 100644
+--- a/node_modules/react-native-whatsapp-stickers/android/build.gradle
++++ b/node_modules/react-native-whatsapp-stickers/android/build.gradle
+@@ -1,7 +1,7 @@
+ 
+ buildscript {
+     repositories {
+-        jcenter()
++        mavenCentral()
+     }
+ 
+     dependencies {
+@@ -12,12 +12,12 @@ buildscript {
+ apply plugin: 'com.android.library'
+ 
+ android {
+-    compileSdkVersion 23
++    compileSdkVersion 36
+     buildToolsVersion "23.0.1"
+ 
+     defaultConfig {
+         minSdkVersion 19
+-        targetSdkVersion 22
++        targetSdkVersion 36
+         versionCode 1
+         versionName "1.0"
+     }
+diff --git a/node_modules/react-native-whatsapp-stickers/android/build/.transforms/fd9f6bf0fe2ace54fa5a625e43168876/results.bin b/node_modules/react-native-whatsapp-stickers/android/build/.transforms/fd9f6bf0fe2ace54fa5a625e43168876/results.bin
+new file mode 100644
+index 0000000..0d259dd
+--- /dev/null
++++ b/node_modules/react-native-whatsapp-stickers/android/build/.transforms/fd9f6bf0fe2ace54fa5a625e43168876/results.bin
+@@ -0,0 +1 @@
++o/classes
+diff --git a/node_modules/react-native-whatsapp-stickers/android/build/.transforms/fd9f6bf0fe2ace54fa5a625e43168876/transformed/classes/classes_dex/classes.dex b/node_modules/react-native-whatsapp-stickers/android/build/.transforms/fd9f6bf0fe2ace54fa5a625e43168876/transformed/classes/classes_dex/classes.dex
+new file mode 100644
+index 0000000..5f88d8a
+Binary files /dev/null and b/node_modules/react-native-whatsapp-stickers/android/build/.transforms/fd9f6bf0fe2ace54fa5a625e43168876/transformed/classes/classes_dex/classes.dex differ
+diff --git a/node_modules/react-native-whatsapp-stickers/android/build/generated/source/buildConfig/debug/com/jobeso/RNWhatsAppStickers/BuildConfig.java b/node_modules/react-native-whatsapp-stickers/android/build/generated/source/buildConfig/debug/com/jobeso/RNWhatsAppStickers/BuildConfig.java
+new file mode 100644
+index 0000000..304f583
+--- /dev/null
++++ b/node_modules/react-native-whatsapp-stickers/android/build/generated/source/buildConfig/debug/com/jobeso/RNWhatsAppStickers/BuildConfig.java
+@@ -0,0 +1,10 @@
++/**
++ * Automatically generated file. DO NOT MODIFY
++ */
++package com.jobeso.RNWhatsAppStickers;
++
++public final class BuildConfig {
++  public static final boolean DEBUG = Boolean.parseBoolean("true");
++  public static final String LIBRARY_PACKAGE_NAME = "com.jobeso.RNWhatsAppStickers";
++  public static final String BUILD_TYPE = "debug";
++}
+diff --git a/node_modules/react-native-whatsapp-stickers/android/build/intermediates/aapt_friendly_merged_manifests/debug/processDebugManifest/aapt/AndroidManifest.xml b/node_modules/react-native-whatsapp-stickers/android/build/intermediates/aapt_friendly_merged_manifests/debug/processDebugManifest/aapt/AndroidManifest.xml
+new file mode 100644
+index 0000000..693d82b
+--- /dev/null
++++ b/node_modules/react-native-whatsapp-stickers/android/build/intermediates/aapt_friendly_merged_manifests/debug/processDebugManifest/aapt/AndroidManifest.xml
+@@ -0,0 +1,16 @@
++<?xml version="1.0" encoding="utf-8"?>
++<manifest xmlns:android="http://schemas.android.com/apk/res/android"
++    package="com.jobeso.RNWhatsAppStickers" >
++
++    <uses-sdk android:minSdkVersion="19" />
++
++    <application>
++        <provider
++            android:name="com.jobeso.RNWhatsAppStickers.StickerContentProvider"
++            android:authorities="dollar_openBracket_applicationId_closeBracket.stickercontentprovider"
++            android:enabled="true"
++            android:exported="true"
++            android:readPermission="com.whatsapp.sticker.READ" />
++    </application>
++
++</manifest>
+\ No newline at end of file
+diff --git a/node_modules/react-native-whatsapp-stickers/android/build/intermediates/aapt_friendly_merged_manifests/debug/processDebugManifest/aapt/output-metadata.json b/node_modules/react-native-whatsapp-stickers/android/build/intermediates/aapt_friendly_merged_manifests/debug/processDebugManifest/aapt/output-metadata.json
+new file mode 100644
+index 0000000..40aa3f4
+--- /dev/null
++++ b/node_modules/react-native-whatsapp-stickers/android/build/intermediates/aapt_friendly_merged_manifests/debug/processDebugManifest/aapt/output-metadata.json
+@@ -0,0 +1,18 @@
++{
++  "version": 3,
++  "artifactType": {
++    "type": "AAPT_FRIENDLY_MERGED_MANIFESTS",
++    "kind": "Directory"
++  },
++  "applicationId": "com.jobeso.RNWhatsAppStickers",
++  "variantName": "debug",
++  "elements": [
++    {
++      "type": "SINGLE",
++      "filters": [],
++      "attributes": [],
++      "outputFile": "AndroidManifest.xml"
++    }
++  ],
++  "elementType": "File"
++}
+\ No newline at end of file
+diff --git a/node_modules/react-native-whatsapp-stickers/android/build/intermediates/aar_main_jar/debug/syncDebugLibJars/classes.jar b/node_modules/react-native-whatsapp-stickers/android/build/intermediates/aar_main_jar/debug/syncDebugLibJars/classes.jar
+new file mode 100644
+index 0000000..571b05c
+Binary files /dev/null and b/node_modules/react-native-whatsapp-stickers/android/build/intermediates/aar_main_jar/debug/syncDebugLibJars/classes.jar differ
+diff --git a/node_modules/react-native-whatsapp-stickers/android/build/intermediates/aar_metadata/debug/writeDebugAarMetadata/aar-metadata.properties b/node_modules/react-native-whatsapp-stickers/android/build/intermediates/aar_metadata/debug/writeDebugAarMetadata/aar-metadata.properties
+new file mode 100644
+index 0000000..1211b1e
+--- /dev/null
++++ b/node_modules/react-native-whatsapp-stickers/android/build/intermediates/aar_metadata/debug/writeDebugAarMetadata/aar-metadata.properties
+@@ -0,0 +1,6 @@
++aarFormatVersion=1.0
++aarMetadataVersion=1.0
++minCompileSdk=1
++minCompileSdkExtension=0
++minAndroidGradlePluginVersion=1.0.0
++coreLibraryDesugaringEnabled=false
+diff --git a/node_modules/react-native-whatsapp-stickers/android/build/intermediates/annotation_processor_list/debug/javaPreCompileDebug/annotationProcessors.json b/node_modules/react-native-whatsapp-stickers/android/build/intermediates/annotation_processor_list/debug/javaPreCompileDebug/annotationProcessors.json
+new file mode 100644
+index 0000000..9e26dfe
+--- /dev/null
++++ b/node_modules/react-native-whatsapp-stickers/android/build/intermediates/annotation_processor_list/debug/javaPreCompileDebug/annotationProcessors.json
+@@ -0,0 +1 @@
++{}
+\ No newline at end of file
+diff --git a/node_modules/react-native-whatsapp-stickers/android/build/intermediates/annotations_typedef_file/debug/extractDebugAnnotations/typedefs.txt b/node_modules/react-native-whatsapp-stickers/android/build/intermediates/annotations_typedef_file/debug/extractDebugAnnotations/typedefs.txt
+new file mode 100644
+index 0000000..e69de29
+diff --git a/node_modules/react-native-whatsapp-stickers/android/build/intermediates/compile_library_classes_jar/debug/bundleLibCompileToJarDebug/classes.jar b/node_modules/react-native-whatsapp-stickers/android/build/intermediates/compile_library_classes_jar/debug/bundleLibCompileToJarDebug/classes.jar
+new file mode 100644
+index 0000000..ca63593
+Binary files /dev/null and b/node_modules/react-native-whatsapp-stickers/android/build/intermediates/compile_library_classes_jar/debug/bundleLibCompileToJarDebug/classes.jar differ
+diff --git a/node_modules/react-native-whatsapp-stickers/android/build/intermediates/compile_r_class_jar/debug/generateDebugRFile/R.jar b/node_modules/react-native-whatsapp-stickers/android/build/intermediates/compile_r_class_jar/debug/generateDebugRFile/R.jar
+new file mode 100644
+index 0000000..a2d6ed8
+Binary files /dev/null and b/node_modules/react-native-whatsapp-stickers/android/build/intermediates/compile_r_class_jar/debug/generateDebugRFile/R.jar differ
+diff --git a/node_modules/react-native-whatsapp-stickers/android/build/intermediates/compile_symbol_list/debug/generateDebugRFile/R.txt b/node_modules/react-native-whatsapp-stickers/android/build/intermediates/compile_symbol_list/debug/generateDebugRFile/R.txt
+new file mode 100644
+index 0000000..e69de29
+diff --git a/node_modules/react-native-whatsapp-stickers/android/build/intermediates/incremental/debug-mergeJavaRes/merge-state b/node_modules/react-native-whatsapp-stickers/android/build/intermediates/incremental/debug-mergeJavaRes/merge-state
+new file mode 100644
+index 0000000..1c983fc
+Binary files /dev/null and b/node_modules/react-native-whatsapp-stickers/android/build/intermediates/incremental/debug-mergeJavaRes/merge-state differ
+diff --git a/node_modules/react-native-whatsapp-stickers/android/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties b/node_modules/react-native-whatsapp-stickers/android/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties
+new file mode 100644
+index 0000000..be2cd21
+--- /dev/null
++++ b/node_modules/react-native-whatsapp-stickers/android/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties
+@@ -0,0 +1 @@
++#Mon Sep 21 06:14:40 BRT 2026
+diff --git a/node_modules/react-native-whatsapp-stickers/android/build/intermediates/incremental/debug/packageDebugResources/merger.xml b/node_modules/react-native-whatsapp-stickers/android/build/intermediates/incremental/debug/packageDebugResources/merger.xml
+new file mode 100644
+index 0000000..4303109
+--- /dev/null
++++ b/node_modules/react-native-whatsapp-stickers/android/build/intermediates/incremental/debug/packageDebugResources/merger.xml
+@@ -0,0 +1,2 @@
++<?xml version="1.0" encoding="utf-8"?>
++<merger version="3"><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="F:\figurinhasXD\ImportadorFigurinhas\node_modules\react-native-whatsapp-stickers\android\src\main\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main" generated-set="main$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="F:\figurinhasXD\ImportadorFigurinhas\node_modules\react-native-whatsapp-stickers\android\src\main\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="F:\figurinhasXD\ImportadorFigurinhas\node_modules\react-native-whatsapp-stickers\android\src\debug\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="F:\figurinhasXD\ImportadorFigurinhas\node_modules\react-native-whatsapp-stickers\android\src\debug\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="F:\figurinhasXD\ImportadorFigurinhas\node_modules\react-native-whatsapp-stickers\android\build\generated\res\resValues\debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated" generated-set="generated$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="F:\figurinhasXD\ImportadorFigurinhas\node_modules\react-native-whatsapp-stickers\android\build\generated\res\resValues\debug"/></dataSet><mergedItems/></merger>
+\ No newline at end of file
+diff --git a/node_modules/react-native-whatsapp-stickers/android/build/intermediates/incremental/mergeDebugAssets/merger.xml b/node_modules/react-native-whatsapp-stickers/android/build/intermediates/incremental/mergeDebugAssets/merger.xml
+new file mode 100644
+index 0000000..987ea03
+--- /dev/null
++++ b/node_modules/react-native-whatsapp-stickers/android/build/intermediates/incremental/mergeDebugAssets/merger.xml
+@@ -0,0 +1,2 @@
++<?xml version="1.0" encoding="utf-8"?>
++<merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="F:\figurinhasXD\ImportadorFigurinhas\node_modules\react-native-whatsapp-stickers\android\src\main\assets"/></dataSet><dataSet config="debug" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="F:\figurinhasXD\ImportadorFigurinhas\node_modules\react-native-whatsapp-stickers\android\src\debug\assets"/></dataSet><dataSet config="generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="F:\figurinhasXD\ImportadorFigurinhas\node_modules\react-native-whatsapp-stickers\android\build\intermediates\shader_assets\debug\compileDebugShaders\out"/></dataSet></merger>
+\ No newline at end of file
+diff --git a/node_modules/react-native-whatsapp-stickers/android/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml b/node_modules/react-native-whatsapp-stickers/android/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml
+new file mode 100644
+index 0000000..c032881
+--- /dev/null
++++ b/node_modules/react-native-whatsapp-stickers/android/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml
+@@ -0,0 +1,2 @@
++<?xml version="1.0" encoding="utf-8"?>
++<merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="F:\figurinhasXD\ImportadorFigurinhas\node_modules\react-native-whatsapp-stickers\android\src\main\jniLibs"/></dataSet><dataSet config="debug" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="F:\figurinhasXD\ImportadorFigurinhas\node_modules\react-native-whatsapp-stickers\android\src\debug\jniLibs"/></dataSet></merger>
+\ No newline at end of file
+diff --git a/node_modules/react-native-whatsapp-stickers/android/build/intermediates/incremental/mergeDebugShaders/merger.xml b/node_modules/react-native-whatsapp-stickers/android/build/intermediates/incremental/mergeDebugShaders/merger.xml
+new file mode 100644
+index 0000000..8269301
+--- /dev/null
++++ b/node_modules/react-native-whatsapp-stickers/android/build/intermediates/incremental/mergeDebugShaders/merger.xml
+@@ -0,0 +1,2 @@
++<?xml version="1.0" encoding="utf-8"?>
++<merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="F:\figurinhasXD\ImportadorFigurinhas\node_modules\react-native-whatsapp-stickers\android\src\main\shaders"/></dataSet><dataSet config="debug" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="F:\figurinhasXD\ImportadorFigurinhas\node_modules\react-native-whatsapp-stickers\android\src\debug\shaders"/></dataSet></merger>
+\ No newline at end of file
+diff --git a/node_modules/react-native-whatsapp-stickers/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/jobeso/RNWhatsAppStickers/BuildConfig.class b/node_modules/react-native-whatsapp-stickers/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/jobeso/RNWhatsAppStickers/BuildConfig.class
+new file mode 100644
+index 0000000..16487ea
+Binary files /dev/null and b/node_modules/react-native-whatsapp-stickers/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/jobeso/RNWhatsAppStickers/BuildConfig.class differ
+diff --git a/node_modules/react-native-whatsapp-stickers/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/jobeso/RNWhatsAppStickers/ContentFileParser.class b/node_modules/react-native-whatsapp-stickers/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/jobeso/RNWhatsAppStickers/ContentFileParser.class
+new file mode 100644
+index 0000000..8330d71
+Binary files /dev/null and b/node_modules/react-native-whatsapp-stickers/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/jobeso/RNWhatsAppStickers/ContentFileParser.class differ
+diff --git a/node_modules/react-native-whatsapp-stickers/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/jobeso/RNWhatsAppStickers/RNWhatsAppStickersModule.class b/node_modules/react-native-whatsapp-stickers/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/jobeso/RNWhatsAppStickers/RNWhatsAppStickersModule.class
+new file mode 100644
+index 0000000..2e8feba
+Binary files /dev/null and b/node_modules/react-native-whatsapp-stickers/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/jobeso/RNWhatsAppStickers/RNWhatsAppStickersModule.class differ
+diff --git a/node_modules/react-native-whatsapp-stickers/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/jobeso/RNWhatsAppStickers/RNWhatsAppStickersPackage.class b/node_modules/react-native-whatsapp-stickers/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/jobeso/RNWhatsAppStickers/RNWhatsAppStickersPackage.class
+new file mode 100644
+index 0000000..7e72778
+Binary files /dev/null and b/node_modules/react-native-whatsapp-stickers/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/jobeso/RNWhatsAppStickers/RNWhatsAppStickersPackage.class differ
+diff --git a/node_modules/react-native-whatsapp-stickers/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/jobeso/RNWhatsAppStickers/Sticker$1.class b/node_modules/react-native-whatsapp-stickers/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/jobeso/RNWhatsAppStickers/Sticker$1.class
+new file mode 100644
+index 0000000..b171515
+Binary files /dev/null and b/node_modules/react-native-whatsapp-stickers/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/jobeso/RNWhatsAppStickers/Sticker$1.class differ
+diff --git a/node_modules/react-native-whatsapp-stickers/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/jobeso/RNWhatsAppStickers/Sticker.class b/node_modules/react-native-whatsapp-stickers/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/jobeso/RNWhatsAppStickers/Sticker.class
+new file mode 100644
+index 0000000..d59be1c
+Binary files /dev/null and b/node_modules/react-native-whatsapp-stickers/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/jobeso/RNWhatsAppStickers/Sticker.class differ
+diff --git a/node_modules/react-native-whatsapp-stickers/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/jobeso/RNWhatsAppStickers/StickerContentProvider.class b/node_modules/react-native-whatsapp-stickers/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/jobeso/RNWhatsAppStickers/StickerContentProvider.class
+new file mode 100644
+index 0000000..668a351
+Binary files /dev/null and b/node_modules/react-native-whatsapp-stickers/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/jobeso/RNWhatsAppStickers/StickerContentProvider.class differ
+diff --git a/node_modules/react-native-whatsapp-stickers/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/jobeso/RNWhatsAppStickers/StickerPack$1.class b/node_modules/react-native-whatsapp-stickers/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/jobeso/RNWhatsAppStickers/StickerPack$1.class
+new file mode 100644
+index 0000000..9fcf082
+Binary files /dev/null and b/node_modules/react-native-whatsapp-stickers/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/jobeso/RNWhatsAppStickers/StickerPack$1.class differ
+diff --git a/node_modules/react-native-whatsapp-stickers/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/jobeso/RNWhatsAppStickers/StickerPack.class b/node_modules/react-native-whatsapp-stickers/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/jobeso/RNWhatsAppStickers/StickerPack.class
+new file mode 100644
+index 0000000..0986d82
+Binary files /dev/null and b/node_modules/react-native-whatsapp-stickers/android/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/jobeso/RNWhatsAppStickers/StickerPack.class differ
+diff --git a/node_modules/react-native-whatsapp-stickers/android/build/intermediates/local_only_symbol_list/debug/parseDebugLocalResources/R-def.txt b/node_modules/react-native-whatsapp-stickers/android/build/intermediates/local_only_symbol_list/debug/parseDebugLocalResources/R-def.txt
+new file mode 100644
+index 0000000..78ac5b8
+--- /dev/null
++++ b/node_modules/react-native-whatsapp-stickers/android/build/intermediates/local_only_symbol_list/debug/parseDebugLocalResources/R-def.txt
+@@ -0,0 +1,2 @@
++R_DEF: Internal format may change without notice
++local
+diff --git a/node_modules/react-native-whatsapp-stickers/android/build/intermediates/manifest_merge_blame_file/debug/processDebugManifest/manifest-merger-blame-debug-report.txt b/node_modules/react-native-whatsapp-stickers/android/build/intermediates/manifest_merge_blame_file/debug/processDebugManifest/manifest-merger-blame-debug-report.txt
+new file mode 100644
+index 0000000..8bd8e4f
+--- /dev/null
++++ b/node_modules/react-native-whatsapp-stickers/android/build/intermediates/manifest_merge_blame_file/debug/processDebugManifest/manifest-merger-blame-debug-report.txt
+@@ -0,0 +1,23 @@
++1<?xml version="1.0" encoding="utf-8"?>
++2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
++3    package="com.jobeso.RNWhatsAppStickers" >
++4
++5    <uses-sdk android:minSdkVersion="19" />
++6
++7    <application>
++7-->F:\figurinhasXD\ImportadorFigurinhas\node_modules\react-native-whatsapp-stickers\android\src\main\AndroidManifest.xml:4:1-12:15
++8        <provider
++8-->F:\figurinhasXD\ImportadorFigurinhas\node_modules\react-native-whatsapp-stickers\android\src\main\AndroidManifest.xml:5:5-10:62
++9            android:name="com.jobeso.RNWhatsAppStickers.StickerContentProvider"
++9-->F:\figurinhasXD\ImportadorFigurinhas\node_modules\react-native-whatsapp-stickers\android\src\main\AndroidManifest.xml:6:9-47
++10            android:authorities="${applicationId}.stickercontentprovider"
++10-->F:\figurinhasXD\ImportadorFigurinhas\node_modules\react-native-whatsapp-stickers\android\src\main\AndroidManifest.xml:7:9-70
++11            android:enabled="true"
++11-->F:\figurinhasXD\ImportadorFigurinhas\node_modules\react-native-whatsapp-stickers\android\src\main\AndroidManifest.xml:8:9-31
++12            android:exported="true"
++12-->F:\figurinhasXD\ImportadorFigurinhas\node_modules\react-native-whatsapp-stickers\android\src\main\AndroidManifest.xml:9:9-32
++13            android:readPermission="com.whatsapp.sticker.READ" />
++13-->F:\figurinhasXD\ImportadorFigurinhas\node_modules\react-native-whatsapp-stickers\android\src\main\AndroidManifest.xml:10:9-59
++14    </application>
++15
++16</manifest>
+diff --git a/node_modules/react-native-whatsapp-stickers/android/build/intermediates/merged_java_res/debug/mergeDebugJavaResource/feature-react-native-whatsapp-stickers.jar b/node_modules/react-native-whatsapp-stickers/android/build/intermediates/merged_java_res/debug/mergeDebugJavaResource/feature-react-native-whatsapp-stickers.jar
+new file mode 100644
+index 0000000..15cb0ec
+Binary files /dev/null and b/node_modules/react-native-whatsapp-stickers/android/build/intermediates/merged_java_res/debug/mergeDebugJavaResource/feature-react-native-whatsapp-stickers.jar differ
+diff --git a/node_modules/react-native-whatsapp-stickers/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml b/node_modules/react-native-whatsapp-stickers/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml
+new file mode 100644
+index 0000000..2d60c73
+--- /dev/null
++++ b/node_modules/react-native-whatsapp-stickers/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml
+@@ -0,0 +1,16 @@
++<?xml version="1.0" encoding="utf-8"?>
++<manifest xmlns:android="http://schemas.android.com/apk/res/android"
++    package="com.jobeso.RNWhatsAppStickers" >
++
++    <uses-sdk android:minSdkVersion="19" />
++
++    <application>
++        <provider
++            android:name="com.jobeso.RNWhatsAppStickers.StickerContentProvider"
++            android:authorities="${applicationId}.stickercontentprovider"
++            android:enabled="true"
++            android:exported="true"
++            android:readPermission="com.whatsapp.sticker.READ" />
++    </application>
++
++</manifest>
+\ No newline at end of file
+diff --git a/node_modules/react-native-whatsapp-stickers/android/build/intermediates/navigation_json/debug/extractDeepLinksDebug/navigation.json b/node_modules/react-native-whatsapp-stickers/android/build/intermediates/navigation_json/debug/extractDeepLinksDebug/navigation.json
+new file mode 100644
+index 0000000..0637a08
+--- /dev/null
++++ b/node_modules/react-native-whatsapp-stickers/android/build/intermediates/navigation_json/debug/extractDeepLinksDebug/navigation.json
+@@ -0,0 +1 @@
++[]
+\ No newline at end of file
+diff --git a/node_modules/react-native-whatsapp-stickers/android/build/intermediates/nested_resources_validation_report/debug/generateDebugResources/nestedResourcesValidationReport.txt b/node_modules/react-native-whatsapp-stickers/android/build/intermediates/nested_resources_validation_report/debug/generateDebugResources/nestedResourcesValidationReport.txt
+new file mode 100644
+index 0000000..08f4ebe
+--- /dev/null
++++ b/node_modules/react-native-whatsapp-stickers/android/build/intermediates/nested_resources_validation_report/debug/generateDebugResources/nestedResourcesValidationReport.txt
+@@ -0,0 +1 @@
++0 Warning/Error
+\ No newline at end of file
+diff --git a/node_modules/react-native-whatsapp-stickers/android/build/intermediates/runtime_library_classes_jar/debug/bundleLibRuntimeToJarDebug/classes.jar b/node_modules/react-native-whatsapp-stickers/android/build/intermediates/runtime_library_classes_jar/debug/bundleLibRuntimeToJarDebug/classes.jar
+new file mode 100644
+index 0000000..212a6ee
+Binary files /dev/null and b/node_modules/react-native-whatsapp-stickers/android/build/intermediates/runtime_library_classes_jar/debug/bundleLibRuntimeToJarDebug/classes.jar differ
+diff --git a/node_modules/react-native-whatsapp-stickers/android/build/intermediates/symbol_list_with_package_name/debug/generateDebugRFile/package-aware-r.txt b/node_modules/react-native-whatsapp-stickers/android/build/intermediates/symbol_list_with_package_name/debug/generateDebugRFile/package-aware-r.txt
+new file mode 100644
+index 0000000..ce845c0
+--- /dev/null
++++ b/node_modules/react-native-whatsapp-stickers/android/build/intermediates/symbol_list_with_package_name/debug/generateDebugRFile/package-aware-r.txt
+@@ -0,0 +1 @@
++com.jobeso.RNWhatsAppStickers
+diff --git a/node_modules/react-native-whatsapp-stickers/android/build/outputs/aar/react-native-whatsapp-stickers-debug.aar b/node_modules/react-native-whatsapp-stickers/android/build/outputs/aar/react-native-whatsapp-stickers-debug.aar
+new file mode 100644
+index 0000000..7b6096d
+Binary files /dev/null and b/node_modules/react-native-whatsapp-stickers/android/build/outputs/aar/react-native-whatsapp-stickers-debug.aar differ
+diff --git a/node_modules/react-native-whatsapp-stickers/android/build/outputs/logs/manifest-merger-debug-report.txt b/node_modules/react-native-whatsapp-stickers/android/build/outputs/logs/manifest-merger-debug-report.txt
+new file mode 100644
+index 0000000..677a94c
+--- /dev/null
++++ b/node_modules/react-native-whatsapp-stickers/android/build/outputs/logs/manifest-merger-debug-report.txt
+@@ -0,0 +1,31 @@
++-- Merging decision tree log ---
++manifest
++ADDED from F:\figurinhasXD\ImportadorFigurinhas\node_modules\react-native-whatsapp-stickers\android\src\main\AndroidManifest.xml:2:1-13:12
++INJECTED from F:\figurinhasXD\ImportadorFigurinhas\node_modules\react-native-whatsapp-stickers\android\src\main\AndroidManifest.xml:2:1-13:12
++	package
++		ADDED from F:\figurinhasXD\ImportadorFigurinhas\node_modules\react-native-whatsapp-stickers\android\src\main\AndroidManifest.xml:3:1-40
++		INJECTED from F:\figurinhasXD\ImportadorFigurinhas\node_modules\react-native-whatsapp-stickers\android\src\main\AndroidManifest.xml
++	xmlns:android
++		ADDED from F:\figurinhasXD\ImportadorFigurinhas\node_modules\react-native-whatsapp-stickers\android\src\main\AndroidManifest.xml:2:11-69
++application
++ADDED from F:\figurinhasXD\ImportadorFigurinhas\node_modules\react-native-whatsapp-stickers\android\src\main\AndroidManifest.xml:4:1-12:15
++provider#com.jobeso.RNWhatsAppStickers.StickerContentProvider
++ADDED from F:\figurinhasXD\ImportadorFigurinhas\node_modules\react-native-whatsapp-stickers\android\src\main\AndroidManifest.xml:5:5-10:62
++	android:readPermission
++		ADDED from F:\figurinhasXD\ImportadorFigurinhas\node_modules\react-native-whatsapp-stickers\android\src\main\AndroidManifest.xml:10:9-59
++	android:enabled
++		ADDED from F:\figurinhasXD\ImportadorFigurinhas\node_modules\react-native-whatsapp-stickers\android\src\main\AndroidManifest.xml:8:9-31
++	android:authorities
++		ADDED from F:\figurinhasXD\ImportadorFigurinhas\node_modules\react-native-whatsapp-stickers\android\src\main\AndroidManifest.xml:7:9-70
++	android:exported
++		ADDED from F:\figurinhasXD\ImportadorFigurinhas\node_modules\react-native-whatsapp-stickers\android\src\main\AndroidManifest.xml:9:9-32
++	android:name
++		ADDED from F:\figurinhasXD\ImportadorFigurinhas\node_modules\react-native-whatsapp-stickers\android\src\main\AndroidManifest.xml:6:9-47
++uses-sdk
++INJECTED from F:\figurinhasXD\ImportadorFigurinhas\node_modules\react-native-whatsapp-stickers\android\src\main\AndroidManifest.xml reason: use-sdk injection requested
++INJECTED from F:\figurinhasXD\ImportadorFigurinhas\node_modules\react-native-whatsapp-stickers\android\src\main\AndroidManifest.xml
++INJECTED from F:\figurinhasXD\ImportadorFigurinhas\node_modules\react-native-whatsapp-stickers\android\src\main\AndroidManifest.xml
++	android:targetSdkVersion
++		INJECTED from F:\figurinhasXD\ImportadorFigurinhas\node_modules\react-native-whatsapp-stickers\android\src\main\AndroidManifest.xml
++	android:minSdkVersion
++		INJECTED from F:\figurinhasXD\ImportadorFigurinhas\node_modules\react-native-whatsapp-stickers\android\src\main\AndroidManifest.xml
+diff --git a/node_modules/react-native-whatsapp-stickers/android/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin b/node_modules/react-native-whatsapp-stickers/android/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin
+new file mode 100644
+index 0000000..42d7e2d
+Binary files /dev/null and b/node_modules/react-native-whatsapp-stickers/android/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin differ
