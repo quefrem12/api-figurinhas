@@ -8,7 +8,7 @@ export default function App() {
   const [loading, setLoading] = useState(false);
 
   // Seu IP e porta do Flask
-  const URL_DOWNLOAD = `https://smooth-ducks-cross.loca.lt`;
+  const URL_DOWNLOAD = "https://api-figurinhas-production.up.railway.app/baixar_zip";
 
   const baixarEImportar = async () => {
     setLoading(true);
